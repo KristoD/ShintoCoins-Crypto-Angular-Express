@@ -1,0 +1,9 @@
+<h1>Buy ShintoCoins</h1>
+
+<p>Current ShintoCoin Value: ${{value}}</p>
+<p>Number of ShintoCoins Owned: {{balance}}</p>
+
+<form (submit)="onSubmit()">
+  <input type="number" name="number" [(ngModel)]="number" placeholder="Number">
+  <input type="submit" value="Buy">
+</form>

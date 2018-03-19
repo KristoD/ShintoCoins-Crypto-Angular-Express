@@ -1,0 +1,11 @@
+<h1>Sell ShintoCoins</h1>
+<p>Current ShintoCoin Value: ${{value}}</p>
+<p>Number of ShintoCoins Owned: {{balance}}</p>
+<p *ngIf="status === false">
+  Can't sell more than your balance!
+</p>
+
+<form (submit)="onSubmit()">
+  <input type="number" name="number" [(ngModel)]="number" placeholder="Number">
+  <input type="submit" value="Sell">
+</form>
